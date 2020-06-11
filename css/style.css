@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+h1 {
+  text-align: center;
+}
+.box section {
+  padding: 10px;
+}
+
+.box section .content {
+  position: relative;
+  border: 1px solid;
+  background-color: bisque;
+  padding: 10px;
+  padding-top: 30px;
+  height: 100%;
+}
+.box section  .content .title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  width: 100px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 992px) {
+  .box section {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .box section {
+    width: 50%;
+  }
+  .box section:last-child {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .box section {
+    width: 100%;
+  }
+}
+.t-1{
+    background-color: tomato;
+    color: white;
+}
+
+.t-2{
+    background-color: turquoise;
+    color: rgb(0, 0, 0);
+}
+.t-3{
+    background-color: rgb(55, 54, 168);
+    color: white;
+}
